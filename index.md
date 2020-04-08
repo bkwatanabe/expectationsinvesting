@@ -1,3 +1,23 @@
+# Georgia Tech CS 7641 - Machine Learning
+## Spring 2020 Final Project: Expectations Investing
+### Brett Watanabe, Chad Hayes, Daeil Cha, Hyun Jae Park, Paula Gluss
+
+## Introduction
+- What is the Motivation or Problem in your project?
+- What people already have done (references are important)?
+- What are you trying to do to tackle with your project motivation or problem?
+
+## Results and Discussion
+- Visualization (figures, plots, tree based visualization, interactive visualization)
+- Explain things which you cannot explain them using visualization (DO NOT be descriptive, be as concise as possible)
+- Visualization (figures, plots, tree based visualization, interactive visualization)
+
+## Conclusion
+- What is your major achievement?
+- Future work?
+
+# Reference Stuff From Github (Delete this after y'all have seen it)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/bkwatanabe/expectationsinvesting.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
