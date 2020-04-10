@@ -9,6 +9,13 @@
 
 ## Results and Discussion
 - Visualization (figures, plots, tree based visualization, interactive visualization)
+
+
+Graph 1
+
+![Difference between market and actual growth each year](plots/download.png) 
+
+
 - Explain things which you cannot explain them using visualization (DO NOT be descriptive, be as concise as possible)
 - Visualization (figures, plots, tree based visualization, interactive visualization)
 
