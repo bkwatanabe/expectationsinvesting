@@ -1,6 +1,6 @@
 # Georgia Tech CS 7641 - Machine Learning
 ## Spring 2020 Final Project: Expectations Investing
-#### Brett Watanabe, Chad Hayes, Daeil Cha, Hyun Jae Park, Paula Gluss
+#### Daeil Cha, Paula Gluss, Chad Hayes, Hyun Jae Park, Brett Watanabe
 
 
 ## Motivation
