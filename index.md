@@ -4,9 +4,9 @@
 
 
 ## Motivation
-Our objective is to infer stock market expectations of future company performance. In its simplest form, a stock price represents all future expectations about a company. But the stock market is ‘wrong’ many times and miscalculates future performance. Herein lies the opportunity for an investor: if he has a confident view on a company’s future performance and suspects the market’s expectations of said performance are wrong, then he has a chance to profitably trade the company’s stock. This concept is a fundamental cornerstone of investing.
+Our objective is to infer stock market expectations of future company performance. In its simplest form, a stock price represents all future expectations about a company. But the stock market is ‘wrong’ many times and miscalculates future performance. Herein lies the opportunity for an investor: if he has a confident view of a company’s future performance and suspects the market’s expectations of said performance are wrong, then he has a chance to profitably trade the company’s stock. This concept is a fundamental cornerstone of investing.
 
-As such, our goal is to predict when the market will miscalculate future company performance. To our knowledge, this is a completely novel approach. We will first infer the market’s expectations (using a concept called ‘expectations investing’), then compare those to actual performance. Finally, we will investigate what features are most important in causing the market to miscalculate performance. We will assess the quality of our model and also calculate the hypothetical return of an opportunistic investor that has foreknowledge of the market’s miscalculations. To be clear, we are not trying to predict stock returns.
+As such, our goal is to systematically predict **when** the market will miscalculate future company performance. To our knowledge, this is a completely novel approach. We will first infer the market’s expectations (using a concept called ‘[expectations investing|http://www.expectationsinvesting.com/]’), then compare those to actual performance. Finally, we will investigate what features are most important in causing the market to miscalculate performance. To be clear, we are **not** trying to predict stock returns.
 
 
 ## Background
@@ -20,13 +20,13 @@ In reality, each future cash flow is discounted by some discount factor (the “
 
 (ii) Company value (today) = Sum(cash_flow_i / (1 + WACC^i)) for i = 1 to infinity
 
-To derive each cash flow, for simplicity we assume some growth rate from today’s cash flow (cash_flow_0^i). But note that the summation goes to infinity and since no business can grow into infinite value, we have to make some adjustments. We assume the company’s cash flow will grow at some rate g1 for the nearterm (say, 10 years), then another rate g2 into perpetuity. So the formula becomes:
+To derive each cash flow, for simplicity we assume some growth rate from today’s cash flow (cash_flow_0^i). But note that the summation goes to infinity and since no business can grow into infinite value, we have to make some adjustments. We assume the company’s cash flow will grow at some rate **g1** for the nearterm (say, 10 years), then another rate **g2** into perpetuity. So the formula becomes:
 
-(iii) Company value (today)  = Sum(cash_flow_0 * \[(1 + g1) / (1 + WACC)\]^i) for i = 1 to 10 + Sum(cash_flow_10 * \[(1+g2) / (1 + WACC)\]^i) for i = 11 to infinity
+(iii) Company value (today)  = Sum(cash_flow_0 * \[(1 + g1) / (1 + WACC)]^i) for i = 1 to 10 + Sum(cash_flow_10 * \[(1+g2) / (1 + WACC)]^i) for i = 11 to infinity
 
 Note that the second term of the right side is a perpetuity. So we can rewrite the equation:
 
-(iv) Company value (today)  = Sum(cash_flow_0 * \[(1 + g1) / (1 + WACC)\]^i) for i = 1 to 10 + cash_flow_10 * (1 / \[WACC - g2\])
+(iv) Company value (today)  = Sum(cash_flow_0 * \[(1 + g1) / (1 + WACC)]^i) for i = 1 to 10 + cash_flow_10 * (1 / \[WACC - g2])
 
 Finally, to derive the current stock price, we simply divide the company value by the company’s diluted shares outstanding. For more information about this calculation, see the following link: https://en.wikipedia.org/wiki/Discounted_cash_flow
 
