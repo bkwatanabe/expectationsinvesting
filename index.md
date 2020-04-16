@@ -49,7 +49,7 @@ The process of transforming the data was considerably extensive. We had to manua
 ### Exploratory Data Analysis
 We explored the relationship between features and our label (which we call “market error”) by visualizing the marginal relationships between them. This gave us an idea of which features are important in our analysis, and how they impact the label ‘market error.’ For instance, we found a negative correlation between the growth in GDP and the market error. This is an intriguing, somewhat counterintuitive finding.
 
-![GDP vs. Market Error Plot](/plots/gdp_vs_market_error.png)
+![GDP Market Error Plot](/plots/gdp_vs_market_error.png)
 
 We also explored the correlation between our features. Across the entire dataset, the correlations were quite low.
 
