@@ -6,7 +6,7 @@
 ## Motivation
 Our objective is to infer stock market expectations of future company performance. In its simplest form, a stock price represents all future expectations about a company. But the stock market is ‘wrong’ many times and miscalculates future performance. Herein lies the opportunity for an investor: if he has a confident view of a company’s future performance and suspects the market’s expectations of said performance are wrong, then he has a chance to profitably trade the company’s stock. This concept is a fundamental cornerstone of investing.
 
-As such, our goal is to systematically predict **when** the market will miscalculate future company performance. To our knowledge, this is a completely novel approach. We will first infer the market’s expectations (using a concept called ‘[expectations investing](http://www.expectationsinvesting.com/)’), then compare those to actual performance. Finally, we will investigate what features are most important in causing the market to miscalculate performance. To be clear, we are **not** trying to predict stock returns.
+As such, our goal is to systematically predict **when** the market will miscalculate future company performance. To our knowledge, this is a completely novel approach. We will first infer the market’s expectations using a concept called ‘[expectations investing](http://www.expectationsinvesting.com/)’, then compare those to actual performance. Finally, we will investigate what features are most important in causing the market to miscalculate performance. To be clear, we are **not** trying to predict stock returns.
 
 
 ## Background
@@ -49,7 +49,7 @@ The process of transforming the data was considerably extensive. We had to manua
 ### Exploratory Data Analysis
 We explored the relationship between features and our label (which we call “market error”) by visualizing the marginal relationships between them. This gave us an idea of which features are important in our analysis, and how they impact the label ‘market error.’ For instance, we found a negative correlation between the growth in GDP and the market error. This is an intriguing, somewhat counterintuitive finding.
 
-<img src="/plots/gdp_vs_market_error.png" width="400px">
+<img src="/plots/gdp_vs_market_error.png">
 
 We also explored the correlation between our features. Across the entire dataset, the correlations were quite low.
 
