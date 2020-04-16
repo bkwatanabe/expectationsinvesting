@@ -69,7 +69,17 @@ We should first note a particular observation about the data. We created a new l
 ### Supervised Learning
 Below we outline the results of 9 different classification methods on our data. We found that a Random Forest classifier worked best, and it saw an accuracy, precision, recall, and F1 score of 75.98%, 76.07%, 86.22%, and 80.83%, respectively. We consider these are strong results especially in relation to the baseline of 57%. We should note that investors are focused on precision (maximizing the percent of profitable trades) over recall (capturing all the profitable trades possible). For a number of reasons, a fundamental principle of investing is to avoid losses whenever possible. 
 
-# Get Table (delete this)
+| **Supervised Model**     | **Accuracy** | **Precision** | **Recall** |    **F1** |
+|----------------------|:---------:|:----------:|:-------:|:------:|
+| Logistic Regression  |    60.21 |      66.8 |  64.12 | 65.43 |
+| K-Nearest Neighbors  |    57.92 |     63.05 |  68.61 | 65.67 |
+| Random Forest        |    **75.98** |     **76.07** |  86.22 | **80.83** |
+| Gaussian Naive Bayes |    59.06 |     59.47 |  **95.18** |  73.2 |
+| Decision Tree        |    65.44 |     70.86 |  69.92 | 70.38 |
+| Linear SVM           |     59.7 |     66.45 |   63.4 | 64.89 |
+| Non-Linear SVM       |    57.86 |     63.68 |  65.78 | 64.71 |
+| Feed-Forward Network |     65.7 |     64.87 |  90.75 | 75.65 |
+| LSTM Network         |    66.48 |     67.56 |  82.58 | 74.32 |
 
 From the random forest model we were able to obtain feature importance.
 The top 5 most influential features were in the following order:
@@ -92,13 +102,32 @@ We simply omitted those features with 0 values for coefficients, which showed th
 ### Unsupervised Learning
 We also considered unsupervised learning methods: specifically, clustering algorithms. Using only the features in our dataset, we found the following results.
 
-# Add Table (delete this)
+| **K-Means Number of Clusters** | **Silhouette Score** | **Davies-Bouldin Score** |
+|----------------------------|:----------------:|:--------------------:|
+| 5                          |           0.7777 |               0.1594 |
+| 6                          |           0.7869 |               0.2239 |
+| 7                          |            0.808 |                0.202 |
+| 8                          |           0.8162 |               0.2129 |
+| 9                          |           0.8221 |               0.2046 |
+| 10                         |            0.775 |               0.2375 |
+| 11                         |           0.7716 |               0.2293 |
+| 12                         |           0.7626 |               0.2597 |
 
 This suggests that stocks can be clustered using our features since the Silhouette scores are relatively high and the Davies-Bouldin scores are low. We see that the best results are generated when k is 9 clusters.
 
 Now that we have these clusters, what can we do in context with our experiment? Do the clusters say anything helpful about how much the market miscalculates future business performance?  We inspected the mean and variance of our label (the market error of the future) for 9 clusters, and we did not find conclusive evidence that our clustering approach has predictive power. The mean of the labels were between 57-61%, which is not impressive given that baseline accuracy is around 57%. Also, the standard deviation of the label was high (between 48-49%). See the results below (note: ‘LABEL’ which was used for supervised learning was not included during clustering, but the mean and standard deviation of ‘LABEL’ were calculated afterwards to see if certain stocks clustered together frequently differed from market expectations).
 
-# Add table (delete this)
+| **Cluster Number<br>(9 Clusters)** | **Data Points<br>in Cluster** | **Mean of <br>Cluster (LABEL)** | **Std. Dev of <br>Cluster (LABEL)** |
+|--------------------------------|:--------------------------:|:----------------------------:|:--------------------------------:|
+| 0                              |                    23,569 |                      0.5966 |                          0.4906 |
+| 1                              |                         2 |                         0.5 |                             0.5 |
+| 2                              |                         1 |                           0 |                               0 |
+| 3                              |                    23,323 |                      0.5692 |                          0.4952 |
+| 4                              |                    19,455 |                      0.6116 |                          0.4874 |
+| 5                              |                    82,321 |                      0.6002 |                          0.4898 |
+| 6                              |                     7,790 |                      0.5801 |                          0.4935 |
+| 7                              |                   122,919 |                      0.5745 |                          0.4944 |
+| 8                              |                     5,244 |                      0.5896 |                          0.4919 |
 
 Additionally, we attempted other clustering algorithms (e.g. DBSCAN), but silhouette / Davies-Bouldin scores were significantly worse than using K-means with 9 clusters.
 
