@@ -129,15 +129,15 @@ We uncovered some interesting, counterintuitive results from our analysis. First
 
 
 ## Contributions
-Proposal: All
-Data Collection: Daeil
-Data Wrangling: All
-Exploratory Data Analysis: Hyun Jae
-Variable Selection: Paula
-Visualization: Paula, Hyun Jae
-Modeling: Michael (Chad)
-Analysis and Conclusion: Brett and all
-Github and Writeup: All
+Proposal: All  
+Data Collection: Daeil  
+Data Wrangling: All  
+Exploratory Data Analysis: Hyun Jae  
+Variable Selection: Paula  
+Visualization: Paula, Hyun Jae  
+Modeling: Michael (Chad)  
+Analysis and Conclusion: Brett and all  
+Github and Writeup: All  
 
 
 ## References and Sources
@@ -177,43 +177,43 @@ Once we calculated free cash flow for each company at each date, we then calcula
 Our label is the absolute difference between the market’s expectation of growth in cash flow, versus realized growth in cash flow (G1 - G1_ACTUAL). Intuitively, this represents how much the market miscalculates a company’s future growth.
 
 ### Numerical Features (Company Specific)
-CAPEX_SALES - Capital expenditures to last 12 months of sales (capxy / rev_ttm). A high ratio suggests a deteriorating financial position.
-CAPEX_OPINC - Capital expenditures to yearly operating cash flow (capxy / nopat_ttm)
-CAPEX_DEP - Capital expenditures to yearly depreciation and amortization (capxy / (4 * dpq))
-CF_CAPEX - Cash flow to capital expenditures (cf_ttm / capxy). This measures a company's ability to acquire long-term assets using free cash flow. A higher ratio suggests sufficient capital to fund operations.
-CF_CH - 12 month change in cash flow
-COST_DEBT - cost of debt
-DEBT_TO_CAP - Debt to invested capital (dlttq / icaptq)
-DEBT_TO_MCAP - Debt to market capital (dlttq / mkvaltq)
-MKVALTQ - Market value
-NETINC_CH - 12 month change in net income
-NOPAT_CH - 12 month change in net operating profit after tax
-P_CF - Price to trailing 12 months of free cash flow to firm (prccq / (cf_ttm / cshfdq))
-PE - Price to trailing 12 months of net income (prccq / (netinc_ttm / cshfdq))
-OP_MARGIN - Net operating margin (nopat_ttm / rev_ttm)
-REV_CH - 12 month change in revenue
-RET_PAST1Q - Stock return trailing 1 quarter
-RET_PAST2Q - Stock return trailing 2 quarters
-RET_PAST3Q - Stock return trailing 3 quarters
-RET_PAST4Q - Stock return trailing 4 quarters
-RET_PAST8Q - Stock return trailing 8 quarters
-TAX_RATE - Tax rate
-WACC - Weighted average cost of capital
+CAPEX_SALES - Capital expenditures to last 12 months of sales (capxy / rev_ttm). A high ratio suggests a deteriorating financial position.  
+CAPEX_OPINC - Capital expenditures to yearly operating cash flow (capxy / nopat_ttm)  
+CAPEX_DEP - Capital expenditures to yearly depreciation and amortization (capxy / (4 * dpq))  
+CF_CAPEX - Cash flow to capital expenditures (cf_ttm / capxy). This measures a company's ability to acquire long-term assets using free cash flow. A higher ratio suggests sufficient capital to fund operations.  
+CF_CH - 12 month change in cash flow  
+COST_DEBT - cost of debt  
+DEBT_TO_CAP - Debt to invested capital (dlttq / icaptq)  
+DEBT_TO_MCAP - Debt to market capital (dlttq / mkvaltq)  
+MKVALTQ - Market value  
+NETINC_CH - 12 month change in net income  
+NOPAT_CH - 12 month change in net operating profit after tax  
+P_CF - Price to trailing 12 months of free cash flow to firm (prccq / (cf_ttm / cshfdq))  
+PE - Price to trailing 12 months of net income (prccq / (netinc_ttm / cshfdq))  
+OP_MARGIN - Net operating margin (nopat_ttm / rev_ttm)  
+REV_CH - 12 month change in revenue  
+RET_PAST1Q - Stock return trailing 1 quarter  
+RET_PAST2Q - Stock return trailing 2 quarters  
+RET_PAST3Q - Stock return trailing 3 quarters  
+RET_PAST4Q - Stock return trailing 4 quarters  
+RET_PAST8Q - Stock return trailing 8 quarters  
+TAX_RATE - Tax rate  
+WACC - Weighted average cost of capital  
 
 ### Categorical Features (Company Specific)
-FQTR - Calendar quarter during which the data was reported
-GGROUP - GIC Groups
-GIND - GIC Industries
-GSECTOR - GIC Sectors
-GSUBIND - GIC Sub-Industries
-NAICS - North American Industry Classification Code
-SIC - Standard Industry Classification Code
+FQTR - Calendar quarter during which the data was reported  
+GGROUP - GIC Groups  
+GIND - GIC Industries  
+GSECTOR - GIC Sectors  
+GSUBIND - GIC Sub-Industries  
+NAICS - North American Industry Classification Code  
+SIC - Standard Industry Classification Code  
 
 ### Numerical Features (Macro-Economic Data)
-INDPRO - Industrial Production
-GDP_CHANGE - Change in annualized GDP
-CPI - Inflation (measured by Consumer Price Index)
-BUS - Business confidence index
-UNEMP - Unemployment rate
-PCE - Personal Consumption
-CON - Consumer confidence index
+INDPRO - Industrial Production  
+GDP_CHANGE - Change in annualized GDP  
+CPI - Inflation (measured by Consumer Price Index)  
+BUS - Business confidence index  
+UNEMP - Unemployment rate  
+PCE - Personal Consumption  
+CON - Consumer confidence index  
