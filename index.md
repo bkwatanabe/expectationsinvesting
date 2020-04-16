@@ -28,12 +28,12 @@ Note that the second term of the right side is a perpetuity. So we can rewrite t
 
 (iv) Company value (today)  = Sum(cash_flow_0 * \[(1 + g1) / (1 + WACC)]^i) for i = 1 to 10 + cash_flow_10 * (1 / \[WACC - g2])
 
-Finally, to derive the current stock price, we simply divide the company value by the company’s diluted shares outstanding. For more information about this calculation, see the following link: https://en.wikipedia.org/wiki/Discounted_cash_flow
+Finally, to derive the current stock price, we simply divide the company value by the company’s diluted shares outstanding. For more information about this calculation, see the following link: [https://en.wikipedia.org/wiki/Discounted_cash_flow](https://en.wikipedia.org/wiki/Discounted_cash_flow)
 
 ### Expectations Investing
 The preceding section describes how an investor derives his own opinion of a company’s stock price. But what if we want to do the reverse? That is, the stock market’s opinion of value is simply the price a stock trades at any given time; how can we then derive the stock’s markets implicit assumptions of a company’s cash flow growth? In the framework we laid out so far, this means **we want to solve for g1 (the near-term growth rate of cash flows)**. We will then compare the ‘market-implied’ expectation of g1 to the actual near-term growth rate realized by each company. For simplicity, we assessed the 1-year growth in cash flow. 
 
-It is straightforward to solve for the price-implied expectation of g1 by using optimization software. In equation (iv), we know the values of all the variables except for g1 and g2. Typically, g2 is assumed to be some rate lower than inflation (otherwise, the company would exceed the value of the world, which is impossible). For a deep dive into this concept of price-implied expectations of financial performance and for the inspiration behind our approach, see the following link: http://www.expectationsinvesting.com/default.shtml
+It is straightforward to solve for the price-implied expectation of g1 by using optimization software. In equation (iv), we know the values of all the variables except for g1 and g2. Typically, g2 is assumed to be some rate lower than inflation (otherwise, the company would exceed the value of the world, which is impossible). For a deep dive into this concept of price-implied expectations of financial performance and for the inspiration behind our approach, see the following link: [http://www.expectationsinvesting.com/default.shtml](http://www.expectationsinvesting.com/default.shtml)
 
 
 ## Data Collection, Exploration, and Pre-Processing
@@ -171,18 +171,18 @@ Github and Writeup: All
 
 ## References and Sources
 
-https://data.oecd.org/leadind/business-confidence-index-bci.htm
-https://data.oecd.org/leadind/consumer-confidence-index-cci.htm
-https://data.oecd.org/price/inflation-forecast.htm
-https://en.wikipedia.org/wiki/Discounted_cash_flow
-https://fred.stlouisfed.org/series/INDPRO
-https://fred.stlouisfed.org/series/PCEC96
-https://fred.stlouisfed.org/series/GDP
-https://wrds-web.wharton.upenn.edu/wrds/process/wrds.cfm
-https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm
-https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=f000000__3&f=m
-http://www.expectationsinvesting.com/default.shtml
-https://en.wikipedia.org/wiki/Prospect_theory
+[https://data.oecd.org/leadind/business-confidence-index-bci.htm](https://data.oecd.org/leadind/business-confidence-index-bci.htm)  
+[https://data.oecd.org/leadind/consumer-confidence-index-cci.htm](https://data.oecd.org/leadind/consumer-confidence-index-cci.htm)  
+[https://data.oecd.org/price/inflation-forecast.htm](https://data.oecd.org/price/inflation-forecast.htm)  
+[https://en.wikipedia.org/wiki/Discounted_cash_flow](https://en.wikipedia.org/wiki/Discounted_cash_flow)  
+[https://fred.stlouisfed.org/series/INDPRO](https://fred.stlouisfed.org/series/INDPRO)  
+[https://fred.stlouisfed.org/series/PCEC96](https://fred.stlouisfed.org/series/PCEC96)  
+[https://fred.stlouisfed.org/series/GDP](https://fred.stlouisfed.org/series/GDP)  
+[https://wrds-web.wharton.upenn.edu/wrds/process/wrds.cfm](https://wrds-web.wharton.upenn.edu/wrds/process/wrds.cfm)  
+[https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm](https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm)  
+[https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=f000000__3&f=m](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=f000000__3&f=m)  
+[http://www.expectationsinvesting.com/default.shtml](http://www.expectationsinvesting.com/default.shtml)  
+[https://en.wikipedia.org/wiki/Prospect_theory](https://en.wikipedia.org/wiki/Prospect_theory)  
 
 
 ## Appendix
