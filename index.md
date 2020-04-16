@@ -53,12 +53,10 @@ We explored the relationship between features and our label (which we call “ma
 
 We also explored the correlation between our features. Across the entire dataset, the correlations were quite low.
 
-# Get img (delete this)
-![Correlation Plot](/plots/correlation.png) Get img
+![Correlation Plot](/plots/correlation.png)
 
 But the correlations are more pronounced for macro-economic indicators. See below:
 
-# Get img (delete this)
 ![Macro Correlation Plot](/plots/macro_correlation.png) 
 
 ## Approach and Methods
@@ -81,7 +79,7 @@ The top 5 most influential features were in the following order:
 4. Change in revenue		\[Label 1 Mean : 1.1042 / Label 0 Mean : 1.6879]
 5. Net operating margin		\[Label 1 Mean : -0.1479 / Label 0 Mean : 0.2035]
 
-# Get Feature Importances img (delete this)
+![Feature Importance](/plots/feature_importance.png)
 
 This result aligned with our lasso regression model results as shown below.
 
