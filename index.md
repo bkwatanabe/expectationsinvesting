@@ -105,9 +105,6 @@ Github and Writeup: All
 
 **In Progress**
 
-Graph 1
-
-![Difference between market and actual growth each year](plots/market_vs_actual_growth.png) 
 
 
 
