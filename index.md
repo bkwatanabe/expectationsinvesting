@@ -216,17 +216,17 @@ CAPEX_SALES - Capital expenditures to last 12 months of sales (capxy / rev_ttm).
 CAPEX_OPINC - Capital expenditures to yearly operating cash flow (capxy / nopat_ttm)  
 CAPEX_DEP - Capital expenditures to yearly depreciation and amortization (capxy / (4 * dpq))  
 CF_CAPEX - Cash flow to capital expenditures (cf_ttm / capxy). This measures a company's ability to acquire long-term assets using free cash flow. A higher ratio suggests sufficient capital to fund operations.  
-CF_CH - 12 month change in cash flow  
+CF_CH - Year-on-year change in trailing 12 months cash flow  
 COST_DEBT - cost of debt  
 DEBT_TO_CAP - Debt to invested capital (dlttq / icaptq)  
 DEBT_TO_MCAP - Debt to market capital (dlttq / mkvaltq)  
 MKVALTQ - Market value  
-NETINC_CH - 12 month change in net income  
-NOPAT_CH - 12 month change in net operating profit after tax  
+NETINC_CH - Year-on-year change in trailing 12 months net income  
+NOPAT_CH - Year-on-year change in trailing 12 months net operating profit after tax  
 P_CF - Price to trailing 12 months of free cash flow to firm (prccq / (cf_ttm / cshfdq))  
 PE - Price to trailing 12 months of net income (prccq / (netinc_ttm / cshfdq))  
 OP_MARGIN - Net operating margin (nopat_ttm / rev_ttm)  
-REV_CH - 12 month change in revenue  
+REV_CH - Year-on-year change in trailing 12 months revenue  
 RET_PAST1Q - Stock return trailing 1 quarter  
 RET_PAST2Q - Stock return trailing 2 quarters  
 RET_PAST3Q - Stock return trailing 3 quarters  
