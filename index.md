@@ -148,7 +148,7 @@ According to our results from the random forest and logistic regression model, w
 
   - **Capital expenditures to depreciation**: This is the ratio of capital investments a company makes over a given time to the depreciation of its existing investments. While a company that seeks growth must invest in its assets faster than its assets depreciate, it appears that investors overestimate the importance of this variable.
 
-  - **WACC** and **Cost of debt**: WACC is the “weighted average cost of capital,” or the amount that a company’s capital (debt and equity) cost per year. It is somewhat odd that this would make investors over-optimistic (higher g1) about a company’s future, but this could simply be a function of our approach and of where g1 and WACC sit in the calculation of stock prices: numerator and denominator, respectively. 
+  - **WACC** and **Cost of debt**: WACC is the “weighted average cost of capital,” or the amount that a company’s capital (debt and equity) cost per year. It could make sense that investors do not sufficiently account for the cost of capital when  forecasting future growth, and therefore overestimate growth when that cost is high. But this could also simply be a function of our approach, and of where g1 and WACC sit in the calculation of stock prices: numerator and denominator, respectively. 
 
   - **Capital expenditures to sales**: This is the ratio of a company’s capital investments to its sales. While capital expenditures are necessary for growth, a ratio that is too high could suggest a deteriorating financial position, or that the company is unable to achieve growth without spending significantly more; perhaps investors are overly relying on this metric.
 
