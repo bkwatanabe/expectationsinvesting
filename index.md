@@ -196,11 +196,13 @@ Nearly all of our data was temporal, and we needed to calculate changes in certa
 
 To generate the ‘market error’ label for our project (market expectations of cash flow growth versus actual growth), we required quarterly cash flows for each company. This is not so simple as downloading cash flow figures from a database, because those figures can include extraordinary one-time items that are not reflective of real business performance, and because quarterly numbers of cash flow are not reliably available (at least in the database we used). So we downloaded all the elements required to calculate cash flow:
 
-(v) Free Cash Flow to Firm = Net Operating Profit After Tax + (Depreciation & Amortization) - Capital Expenditures - Change in Net Working Capital
+#### Equation (v)
+Free Cash Flow to Firm = Net Operating Profit After Tax + (Depreciation & Amortization) - Capital Expenditures - Change in Net Working Capital
 
 We also needed to manually calculate Net Operating Profit After Tax (NOPAT), which reflects business profit:
 
-(vi) NOPAT =  (Net Income + Taxes Paid + Interest Expenses Paid + Non-Operating Gains/Losses) * (1 - Tax Rate)
+#### Equation (vi)
+NOPAT =  (Net Income + Taxes Paid + Interest Expenses Paid + Non-Operating Gains/Losses) * (1 - Tax Rate)
 
 Note that NOPAT **adds** back taxes paid, interest paid, and non-operating losses. This is done to adjust for items that can fluctuate widely and do not necessarily relate to core business operations. 
 
