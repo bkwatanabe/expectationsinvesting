@@ -22,7 +22,7 @@ In reality, each future cash flow is discounted by some discount factor (the “
 #### Equation (ii)
 ![Equation (ii)](/plots/eq2.png)
 
-To derive each cash flow, for simplicity we assume some growth rate from today’s cash flow (cash_flow_0^i). But note that the summation goes to infinity and since no business can grow into infinite value, we have to make some adjustments. We assume the company’s cash flow will grow at some rate **g1** for the nearterm (say, 10 years), then another rate **g2** into perpetuity. So the formula becomes:
+To derive each cash flow, for simplicity we assume some growth rate from today’s cash flow (CashFlowToday*(1+g)^i). But note that the summation goes to infinity and since no business can grow into infinite value, we have to make some adjustments. We assume the company’s cash flow will grow at some rate **g1** for the nearterm (say, 10 years), then another rate **g2** into perpetuity. So the formula becomes:
 
 #### Equation (iii)
 ![Equation (iii)](/plots/eq3.png)
