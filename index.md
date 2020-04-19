@@ -53,15 +53,21 @@ The process of transforming the data was considerably extensive. We had to manua
 ### Exploratory Data Analysis
 We explored the relationship between features and our label (which we call “market error”) by visualizing the marginal relationships between them. This gave us an idea of which features are important in our analysis, and how they impact the label ‘market error.’ For instance, we found a negative correlation between the growth in GDP and the market error. This suggests that the market underestimates the importance of GDP growth on future company cash flows.
 
-![GDP Market Error Plot](/plots/gdp_vs_market_error.png)
+<p align="center">
+<img src="/plots/gdp_vs_market_error.png" alt="GDP Market Error Plot" width="60%">
+</p>
 
 We also explored the correlation between our features. Across the entire dataset, the correlations were quite low.
 
-![Correlation Plot](/plots/correlation.png)
+<p align="center">
+<img src="/plots/correlation.png" alt="Correlation Plot" width="60%">
+</p>
 
 But the correlations are more pronounced for macro-economic indicators. See below:
 
-![Macro Correlation Plot](/plots/macro_correlation.png) 
+<p align="center">
+<img src="/plots/macro_correlation.png" alt="Macro Correlation Plot" width="60%">
+</p>
 
 ## Approach and Methods
 Our primary approach is to use **classification methods to determine when the market will either overestimate or underestimate growth** in a company’s cash flow. To our knowledge, our approach is novel for two reasons: 
@@ -93,15 +99,21 @@ The top 5 most influential features were in the following order:
 4. Change in revenue		\[Label 1 Mean : 1.1042 / Label 0 Mean : 1.6879]
 5. Net operating margin		\[Label 1 Mean : -0.1479 / Label 0 Mean : 0.2035]
 
-![Feature Importance](/plots/feature_importance.png)
+<p align="center">
+<img src="/plots/feature_importance.png" alt="Feature Importance" width="60%">
+</p>
 
 This result aligned with our lasso regression model results as shown below.
 
-![Lasso without removing variables](/plots/lasso_before.png)
+<p align="center">
+<img src="/plots/lasso_before.png" alt="Lasso without removing variables" width="60%">
+</p>
 
 We simply omitted those features with 0 values for coefficients, which showed that 15 features were important. The five most important features in the random forest model were captured in the Lasso regression as well.
 
-![Lasso after removing variables](/plots/lasso_after.png)
+<p align="center">
+<img src="/plots/lasso_after.png" alt="Lasso after removing variables" width="60%">
+</p>
 
 ### Unsupervised Learning
 We also considered unsupervised learning methods: specifically, clustering algorithms. Using only the features in our dataset, we found the following results.
